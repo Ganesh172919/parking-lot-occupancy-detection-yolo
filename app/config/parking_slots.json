@@ -1,0 +1,34 @@
+{
+  "description": "Parking slots mapped from aerial image (top row ~600 series, bottom row ~650-660 series). Coordinates are approximate.",
+  "slots": [
+
+    { "id": "T623", "x": 40, "y": 60, "width": 85, "height": 130 },
+    { "id": "T622", "x": 130, "y": 60, "width": 85, "height": 130 },
+    { "id": "T621", "x": 220, "y": 60, "width": 85, "height": 130 },
+    { "id": "T620", "x": 310, "y": 60, "width": 85, "height": 130 },
+    { "id": "T619", "x": 400, "y": 60, "width": 85, "height": 130 },
+    { "id": "T618", "x": 490, "y": 60, "width": 85, "height": 130 },
+    { "id": "T617", "x": 580, "y": 60, "width": 85, "height": 130 },
+    { "id": "T616", "x": 670, "y": 60, "width": 85, "height": 130 },
+    { "id": "T615", "x": 760, "y": 60, "width": 85, "height": 130 },
+    { "id": "T614", "x": 850, "y": 60, "width": 85, "height": 130 },
+    { "id": "T613", "x": 940, "y": 60, "width": 85, "height": 130 },
+    { "id": "T612", "x": 1030, "y": 60, "width": 85, "height": 130 },
+
+    { "id": "B664", "x": 40, "y": 260, "width": 85, "height": 130 },
+    { "id": "B663", "x": 130, "y": 260, "width": 85, "height": 130 },
+    { "id": "B662", "x": 220, "y": 260, "width": 85, "height": 130 },
+    { "id": "B661", "x": 310, "y": 260, "width": 85, "height": 130 },
+    { "id": "B660", "x": 400, "y": 260, "width": 85, "height": 130 },
+    { "id": "B659", "x": 490, "y": 260, "width": 85, "height": 130 },
+    { "id": "B658", "x": 580, "y": 260, "width": 85, "height": 130 },
+    { "id": "B657", "x": 670, "y": 260, "width": 85, "height": 130 },
+    { "id": "B656", "x": 760, "y": 260, "width": 85, "height": 130 },
+    { "id": "B655", "x": 850, "y": 260, "width": 85, "height": 130 },
+    { "id": "B654", "x": 940, "y": 260, "width": 85, "height": 130 },
+    { "id": "B653", "x": 1030, "y": 260, "width": 85, "height": 130 },
+    { "id": "B652", "x": 1120, "y": 260, "width": 85, "height": 130 },
+    { "id": "B651", "x": 1210, "y": 260, "width": 85, "height": 130 }
+
+  ]
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Parking Detection</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+    <script defer src="/static/app.js"></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero-card">
+        <p class="eyebrow">Single-Frame Parking Analysis</p>
+        <h1>Smart Parking Detection</h1>
+        <p class="hero-copy">
+          Enter a camera URL, click <strong>Show Parking Area</strong>, and the app
+          will capture one frame, detect cars with YOLO, evaluate each predefined
+          parking slot, and return an annotated image.
+        </p>
+      </section>
+
+      <section class="workspace-grid">
+        <section class="panel control-panel">
+          <h2>Camera Input</h2>
+          <label for="cameraUrl">Camera URL</label>
+          <input
+            id="cameraUrl"
+            type="text"
+            value="http://10.0.1.98:4747/video"
+            placeholder="rtsp://username:password@camera-ip/stream"
+            autocomplete="off"
+          />
+          <button id="analyzeButton" type="button">Show Parking Area</button>
+          <p class="hint">
+            The system captures a single frame only. No continuous live video is streamed.
+          </p>
+          <p class="hint">
+            Update slot rectangles in <code>app/config/parking_slots.json</code> to match
+            your parking layout.
+          </p>
+          <p id="statusMessage" class="status status-idle">
+            Ready to process one frame from your camera.
+          </p>
+        </section>
+
+        <section class="counts-grid">
+          <article class="count-card">
+            <span class="count-label">Total Slots</span>
+            <strong id="totalSlots">0</strong>
+          </article>
+          <article class="count-card occupied">
+            <span class="count-label">Occupied</span>
+            <strong id="occupiedSlots">0</strong>
+          </article>
+          <article class="count-card free">
+            <span class="count-label">Free</span>
+            <strong id="freeSlots">0</strong>
+          </article>
+        </section>
+
+        <section class="panel image-panel">
+          <div class="panel-header">
+            <h2>Annotated Parking Area</h2>
+          </div>
+          <div id="imagePlaceholder" class="image-placeholder">
+            Run an analysis to show the latest processed parking image.
+          </div>
+          <img id="parkingImage" alt="Annotated parking result" hidden />
+        </section>
+
+        <section class="panel slots-panel">
+          <div class="panel-header">
+            <h2>Slot Status</h2>
+          </div>
+          <div id="slotList" class="slot-list empty-state">No analysis yet.</div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
