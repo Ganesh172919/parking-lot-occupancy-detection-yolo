@@ -1,6 +1,0 @@
-INFO:     Will watch for changes in these directories: ['C:\\Users\\RAVIPRAKASH\\parking-lot-occupancy-detection-yolo']
-INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-INFO:     Started reloader process [10744] using WatchFiles
-INFO:     Started server process [8656]
-INFO:     Waiting for application startup.
-INFO:     Application startup complete.
